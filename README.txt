@@ -28,7 +28,7 @@ You also need the SDL_mixer header. Sometimes the SDL_mixer header doesn't come 
 -CentOS-
     sudo yum install SDL2_mixer-devel
 -openSUSE-
-    Most likely the SDL_mixer header comes with the SDL2 library by default. If not then you'll have to install it obviously.
+    Most likely the SDL_mixer header comes with the SDL2 library by default on openSUSE. If not then you'll have to install it obviously.
     sudo zypper install libSDL2_mixer-devel
 ------COMPILING------
 Compiling is really straight forward. First go into the games directory:
