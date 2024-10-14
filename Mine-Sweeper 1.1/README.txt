@@ -2,7 +2,7 @@
 ---WHAT'S NEW---
 1. Texture upgrade
 2. Game developed in openGL instead of SDL2
-3. Removed the sound when clicking
+3. Added a sound effect for the mines
 4. Game should run faster
 
 ------DEPENDENCIES-------
