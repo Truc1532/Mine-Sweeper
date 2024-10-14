@@ -10,6 +10,7 @@ Here are all the dependencies you will need to compile this game:
     GL dev library (alteast 1.2)
     GLEW dev library (atleast 2.2)
     SDL2 dev library (atleast 2.0)
+    SDL mixer library (atleast 2.0)
     GNU Compiler Collection (gcc)
     make
 
