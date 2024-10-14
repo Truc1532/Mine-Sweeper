@@ -7,6 +7,7 @@
 
 ------DEPENDENCIES-------
 Here are all the dependencies you will need to compile this game:
+    libjack (atleast 1.9)
     GL dev library (alteast 1.2)
     GLEW dev library (atleast 2.2)
     SDL2 dev library (atleast 2.0)
