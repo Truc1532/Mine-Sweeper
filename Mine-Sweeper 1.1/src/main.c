@@ -425,7 +425,6 @@ int main() {
     glDeleteTextures(1, &five);
     glDeleteTextures(1, &six);
     Mix_FreeChunk(soundEffect[0]);
-    Mix_FreeChunk(soundEffect[1]);
     Mix_CloseAudio();
     SDL_GL_DeleteContext(glContext);
     SDL_DestroyWindow(window);
