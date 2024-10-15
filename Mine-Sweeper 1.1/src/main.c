@@ -8,7 +8,7 @@
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
 #define CELL_SIZE 50
-#define MINES 30
+#define MINES 40
 
 const char* vertexShaderSource = R"(
 #version 460 core
