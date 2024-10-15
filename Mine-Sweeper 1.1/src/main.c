@@ -230,10 +230,9 @@ int main() {
 	    return 1;
     }
 
-    Mix_Chunk* soundEffect[2];
+    Mix_Chunk* soundEffect[1];
 
-    soundEffect[0] = Mix_LoadWAV("sfx/break.flac");
-    soundEffect[1] = Mix_LoadWAV("sfx/boom.flac");
+    soundEffect[0] = Mix_LoadWAV("sfx/boom.flac");
     
     const GLubyte* renderer = glGetString(GL_RENDERER);
     const GLubyte* version = glGetString(GL_VERSION);
@@ -342,13 +341,12 @@ int main() {
 			    if (cellX >= 0 && cellX < cellsX && cellY >= 0 && cellY < cellsY) {
 				if (event.button.button == SDL_BUTTON_LEFT) {
 					if (cellStates[cellY][cellX] != 2) {
-					        Mix_PlayChannel(-1, soundEffect[0], 0);
 						if (mineLocations[cellY][cellX] == 1) {
 							rect.x = cellX * CELL_SIZE;
 							rect.y = cellY * CELL_SIZE;
 							renderTexture(shaderProgram, vao, mine, &rect);
 							SDL_GL_SwapWindow(window);
-							Mix_PlayChannel(-1, soundEffect[1], 0);
+							Mix_PlayChannel(-1, soundEffect[0], 0);
 							SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Game over", "You lost !", window);
 
 							running = 0;
