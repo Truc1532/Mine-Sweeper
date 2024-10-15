@@ -253,6 +253,7 @@ int main() {
     GLuint three = loadTexture("textures/three.bmp");
     GLuint four = loadTexture("textures/four.bmp");
     GLuint five = loadTexture("textures/five.bmp");
+    GLuint six = loadTexture("textures/six.bmp");
 
     int cellsX = WINDOW_WIDTH / CELL_SIZE;
     int cellsY = WINDOW_HEIGHT / CELL_SIZE;
@@ -397,6 +398,7 @@ int main() {
 				           case 3: numberTexture = three; break;
 				           case 4: numberTexture = four; break;
 				           case 5: numberTexture = five; break;
+					   case 6: numberTexture = six; break;
 				           default: break;
 				   }
 				   if (numberTexture) {
@@ -423,6 +425,7 @@ int main() {
     glDeleteTextures(1, &three);
     glDeleteTextures(1, &four);
     glDeleteTextures(1, &five);
+    glDeleteTextures(1, &six);
     Mix_FreeChunk(soundEffect[0]);
     Mix_FreeChunk(soundEffect[1]);
     Mix_CloseAudio();
